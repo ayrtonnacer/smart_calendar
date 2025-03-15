@@ -19,18 +19,10 @@ st.markdown(
     "<h2 style='text-align: center; margin-bottom: 30px'>How can I assist you today?</h2>",
     unsafe_allow_html=True)
 
-# Initial Groq configuration - MODIFICADO para mayor robustez
-try:
-    # Intenta obtener la API key de los secretos de Streamlit
-    api_key = st.secrets["GROQ_API_KEY"]
-except Exception as e:
-    # Si hay un error, muestra un mensaje claro
-    st.error("⚠️ Error: No se pudo acceder a la API key de Groq. Por favor, configura GROQ_API_KEY en los secretos de Streamlit.")
-    st.info("Para configurar los secretos en Streamlit Cloud, ve a Settings → Secrets y añade GROQ_API_KEY = 'tu-api-key-aquí'")
-    st.stop()  # Detiene la ejecución de la app
-
-# Inicializa el cliente solo si tenemos la API key
-client = Groq(api_key=api_key)
+# Initial Groq configuration - Simplificado para que coincida con el ejemplo que funciona
+client = Groq(
+    api_key=st.secrets["GROQ_API_KEY"],
+)
 
 # Available models
 models = {
