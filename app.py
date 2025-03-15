@@ -4,8 +4,9 @@ from groq import Groq
 
 st.set_page_config(page_icon="🤖",
                    layout="centered",
-                   page_title="Ayrton's Assistant - Bookings",
-                   initial_sidebar_state="collapsed")
+                   page_title="Ayrton's Assistant",
+                   initial_sidebar_state="collapsed",
+                   theme="dark")
 
 
 def icon(emoji: str):
@@ -16,7 +17,7 @@ def icon(emoji: str):
 
 
 st.markdown(
-    "<h2 style='text-align: center; margin-bottom: 30px'>How can I assist you today?</h2>",
+    "<h3 style='text-align: center; margin-bottom: 30px'>How can I assist you today?</h3>",
     unsafe_allow_html=True)
 
 # Initial Groq configuration - Simplificado para que coincida con el ejemplo que funciona
