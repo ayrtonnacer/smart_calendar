@@ -5,8 +5,7 @@ from groq import Groq
 st.set_page_config(page_icon="🤖",
                    layout="centered",
                    page_title="Ayrton's Assistant",
-                   initial_sidebar_state="collapsed",
-                   theme="dark")
+                   initial_sidebar_state="collapsed")
 
 
 def icon(emoji: str):
