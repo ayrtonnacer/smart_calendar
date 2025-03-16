@@ -1,5 +1,3 @@
-# Ayrton's AI Assistant - Bookings
-
 A Streamlit application that uses Groq's API to power an AI assistant for managing bookings and handling technical inquiries.
 
 ## Features
