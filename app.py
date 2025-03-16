@@ -4,7 +4,7 @@ from groq import Groq
 
 st.set_page_config(page_icon="🤖",
                    layout="centered",
-                   page_title="Ayrton's Assistant",
+                   page_title="AI Assistant",
                    initial_sidebar_state="collapsed")
 
 
